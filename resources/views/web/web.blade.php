@@ -6,13 +6,11 @@
 
     <title>Demo Renewable Energy | Porto - Multipurpose Website Template</title>	
 
+    <link rel="shortcut icon" type="image/svg" href="{{ asset(config('app.path_img').'/favicon.svg') }}"/>
+
     <meta name="keywords" content="WebSite Template" />
     <meta name="description" content="Porto - Multipurpose Website Template">
     <meta name="author" content="okler.net">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href=" {{ asset('img/favicon.ico') }}" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -22,7 +20,6 @@
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fontawesome-free/css/all.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/animate.compat.css') }}">
     <link rel="stylesheet" href="{{ asset('css/simple-line-icons.min.css') }}">
@@ -38,9 +35,6 @@
 
     <!-- Demo CSS -->
     <link rel="stylesheet" href="{{ asset('css/demo-renewable-energy.css') }}">
-
-    <!-- Skin CSS -->
-    <link id="skinCSS" rel="stylesheet" href="{{ asset('css/skins/skin-renewable-energy.css') }}">
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href=" {{ asset('css/custom.css') }}">
@@ -73,11 +67,10 @@
     <script src="{{asset('js/theme.js')}}"></script>
 
     <script src="{{asset('js/demo-renewable-energy.js')}}"></script>
-    <script src="{{asset('js/view.contact.js')}}"></script>
 
     <script src="{{asset('js/custom.js')}}"></script>
 
     <script src="{{asset('js/theme.init.js')}}"></script>
-@yield('script')
+    @yield('script')
 </body>
 </html>

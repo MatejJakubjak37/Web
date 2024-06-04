@@ -9,4 +9,9 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+
+    protected function makeView($name, $data = [])
+    {
+        return view($name, array_merge($data));
+    }
 }

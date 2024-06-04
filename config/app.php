@@ -16,7 +16,19 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'company_name' => env('COMPANY_NAME', 'Name example'),
+    'company_street' => env('COMPANY_STREET', 'Street example'),
+    'company_city' => env('COMPANY_CITY', 'City example'),
+    'company_country' => env('COMPANY_COUNTRY', 'Country example'),
+    'company_zip' => env('COMPANY_ZIP', '00000'),
+    'company_full_address' => env('COMPANY_STREET', 'Street example')." ".env('COMPANY_CITY', 'City example'),
+    'company_phone' => env('COMPANY_PHONE', '+421 000 000 000'),
+    'company_phone_secondary' => env('COMPANY_PHONE_SECONDARY', '+421 000 000 000'),
+    'company_email' => env('COMPANY_EMAIL', 'example@email.com'),
+    'company_email_secondary' => env('COMPANY_EMAIL_SECONDARY', 'secondary@secondary.com'),
+
+    'facebook_url' => env('FACEBOOK_URL', 'https://www.facebook.com/'),
+    'instagram_url' => env('INSTAGRAM_URL', 'https://www.instagram.com/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,6 +68,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+    'path_img' => env('PATH_IMG', '/img'),
+    'path_plugins' => env('PATH_PLUGINS', '/node_modules'),
 
     'asset_url' => env('ASSET_URL'),
 

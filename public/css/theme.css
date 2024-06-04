@@ -7803,6 +7803,13 @@ a.text-light:focus, a.text-light:hover {
 	color: #FFF !important;
 }
 
+.text-color-light {
+	color: rgb(228, 228, 228) !important;
+}
+.text-color-dark {
+	color: rgb(34, 34, 34) !important;
+}
+
 .text-color-hover-white:hover {
 	color: #FFF !important;
 }

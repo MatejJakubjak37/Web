@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <section class="section my-0 py-5 border-0 bg-color-tertiary text-color-light p-relative overflow-hidden">
+    <section class="section my-0 py-5 border-0 bg-color-tertiary text-color-dark p-relative overflow-hidden">
 
         <svg class="d-none d-lg-block custom-svg-position-3 rotate-r-90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1686.88 1095.86" data-appear-animation-svg="true">
             <path class="appear-animation" data-plugin-options="{'accY': -500, 'forceAnimation': true}" data-appear-animation="customLines1anim" data-appear-animation-delay="100" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M87.95,1.4c6.82,9.14,15.53,21.59,24.68,36.94c6.82,11.45,27.18,46.82,42.55,96.51
@@ -58,29 +58,29 @@
 
         <div class="container container-xl-custom">
             <div class="row mt-5 pt-3 justify-content-between">
-                <div class="col-lg-5 text-color-light">
+                <div class="col-lg-5 text-color-dark">
                     <h4 class="text-primary text-3 font-weight-bold mb-2">OZVITE SA NÁM</h4>
-                    <h3 class="mb-3 text-color-light">Neváhajte nás kontaktovať.<br> Radi Vám pomôžeme a zodpovedáme Vaše otázky.</h3>
-                    <p class="mb-4 pb-2 text-color-light opacity-7">Neváhajte sa na nás kedykoľvek obrátiť. Vaše otázky a dotazy sú pre nás dôležité a veľmi radi Vám pomôžeme. Neváhajte nás kontaktovať, sme tu, aby sme Vám pomohli!</p>
+                    <h3 class="mb-3 text-color-dark">Neváhajte nás kontaktovať.<br> Radi Vám pomôžeme a zodpovedáme Vaše otázky.</h3>
+                    <p class="mb-4 pb-2 text-color-dark opacity-7">Neváhajte sa na nás kedykoľvek obrátiť. Vaše otázky a dotazy sú pre nás dôležité a veľmi radi Vám pomôžeme. Neváhajte nás kontaktovať, sme tu, aby sme Vám pomohli!</p>
 
                     <div class="d-block pb-4">
-                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7">Zavolajte nám</p>
-                        <a href="tel:0123456789" class="d-flex align-items-center text-decoration-none text-color-light text-color-hover-light font-weight-medium ms-1">
-                            <i class="fas fa-phone text-color-light text-3-3 me-2"></i>
-                            800-123-4567
+                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Zavolajte nám</p>
+                        <a href="tel:{{config('app.company_phone')}}" class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-light font-weight-medium ms-1">
+                            <i class="fas fa-phone text-color-dark text-3-3 me-2"></i>
+                            {{config('app.company_phone')}}
                         </a>
                     </div>
 
                     <div class="d-block pb-4">
-                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7">Send us an email</p>
-                        <p class="p-relative bottom-4 text-color-light">
-                            <a class="text-2 font-weight-bold mb-0 text-color-light" href="mailto:you@domain.com">you@domain.com</a> / <a class="text-2 font-weight-bold mb-0 text-color-light" href="mailto:you@domain.com">you2@domain.com</a>
+                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Send us an email</p>
+                        <p class="p-relative bottom-4 text-color-dark">
+                            <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email')}}">{{config('app.company_email')}}</a> / <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email_secondary')}}">{{config('app.company_email_secondary')}}</a>
                         </p>
                     </div>
 
                     <div class="d-block pb-4">
-                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-light opacity-7">Corporate HQ</p>
-                        <p class="p-relative bottom-4 text-color-light">
+                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Corporate HQ</p>
+                        <p class="p-relative bottom-4 text-color-dark">
                             12345 Porto Blvd.<br>Suite 1500<br>Los Angeles, California 90000
                         </p>
                     </div>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0">
-                    <h2 class="text-color-light font-weight-bold text-10 negative-ls-05 line-height-1 mb-5">Chcem cenovú ponuku</span></h2>
+                    <h2 class="text-color-dark font-weight-bold text-10 negative-ls-05 line-height-1 mb-5">Chcem cenovú ponuku</span></h2>
 
                     <div class="card border-0 bg-color-light text-color-tertiary">
                         <div class="card-body m-4">

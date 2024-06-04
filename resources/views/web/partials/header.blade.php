@@ -7,7 +7,7 @@
                         <div class="header-row">
                             <div class="header-logo m-0">
                                 <a href="{{route('web')}}">
-                                    <img alt="Porto" width="111" height="41" src="img/demos/renewable-energy/logo.png">
+                                    <img alt="Porto" width="111" height="41" src="">
                                 </a>
                             </div>
                         </div>
@@ -17,18 +17,18 @@
                             <div class="d-none d-lg-inline-block">
                                 <ul class="nav nav-pills me-1">
                                     <li class="nav-item pe-2 mx-1">
-                                        <a href="http://www.facebook.com/" target="_blank" title="Facebook" class="text-color-dark text-color-hover-primary text-2"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="{{config('app.facebook_url')}}" target="_blank" title="Facebook" class="text-color-dark text-color-hover-primary text-2"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="nav-item px-2 mx-1">
-                                        <a href="http://www.instagram.com/" target="_blank" title="Instagram" class="text-color-dark text-color-hover-primary text-2"><i class="fab fa-instagram"></i></a>
+                                        <a href="{{config('app.instagram_url')}}" target="_blank" title="Instagram" class="text-color-dark text-color-hover-primary text-2"><i class="fab fa-instagram"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="vr opacity-2 d-none d-lg-inline-block"></div>
                             <div>
-                                <a href="tel:0123456789" class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold ms-1">
-                                    <i class="fas fa-phone text-color-dark text-3-3 me-2"></i>
-                                    +421 908 962 407
+                                <a href="{{config('app.company_phone')}}" class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold ms-1">
+                                    <i class="icon icon-phone text-color-primary text-4-5 me-2"></i>
+                                    {{config('app.company_phone')}}
                                 </a>
                             </div>
                         </div>
@@ -46,12 +46,12 @@
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li>
-                                                <a class="nav-link active" href="{{ route('web')}}">
+                                                <a class="nav-link active" href="{{route('web')}}">
                                                     Domov
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-renewable-energy-company.html">
+                                                <a class="nav-link" href="{{route('gallery')}}">
                                                     Realizácie
                                                 </a>
                                             </li>
@@ -61,7 +61,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href=" {{ route('contact')}}">
+                                                <a class="nav-link" href=" {{route('contact')}}">
                                                     Kontakt
                                                 </a>
                                             </li>

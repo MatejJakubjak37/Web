@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Web\WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('web/pages/default');
-})->name('web');
+Route::get('/', [WebController::class, 'default'])->name('web');
 
 Route::get('/kontakt', function() {
     return view('web/pages/contact');
 })->name('contact');
+
+Route::get('/galeria', [WebController::class, 'gallery'])->name('gallery');
+
+Route::get('/sluzby', function() {
+    return view('web/pages/services');
+})->name('services');
