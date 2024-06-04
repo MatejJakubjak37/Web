@@ -48,7 +48,7 @@
         <div class="container container-xl-custom">
             <div class="row mt-5 pt-3 justify-content-between">
                 <div class="col-lg-5 text-color-dark">
-                    <h4 class="text-primary text-3 font-weight-bold mb-2">OZVITE SA NÁM</h4>
+                    <h4 class="text-color-grey text-3 font-weight-bold mb-2">OZVITE SA NÁM</h4>
                     <h3 class="mb-3 text-color-dark">Neváhajte nás kontaktovať.<br> Radi Vám pomôžeme a zodpovedáme Vaše otázky.</h3>
                     <p class="mb-4 pb-2 text-color-dark opacity-7">Neváhajte sa na nás kedykoľvek obrátiť. Vaše otázky a dotazy sú pre nás dôležité a veľmi radi Vám pomôžeme. Neváhajte nás kontaktovať, sme tu, aby sme Vám pomohli!</p>
 
