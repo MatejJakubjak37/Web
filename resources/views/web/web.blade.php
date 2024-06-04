@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Demo Renewable Energy | Porto - Multipurpose Website Template</title>	
+    <title>@hasSection('title')@yield('title') | {{config('app.name')}} @else{{config('app.name')}} | Klempiarské práce Kmetik @endif</title>
 
     <link rel="shortcut icon" type="image/svg" href="{{ asset(config('app.path_img').'/favicon.svg') }}"/>
 

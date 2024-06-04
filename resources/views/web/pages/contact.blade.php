@@ -1,23 +1,12 @@
 @extends('web.web')
 
+@section('title')
+    {{end($breadcrumb)['title']}}
+@endsection
+
 @section('content')
 <div role="main" class="main">
-
-    <section class="page-header page-header-modern bg-color-grey page-header-lg m-0">
-        <div class="container container-xl-custom">
-            <div class="row">
-                <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1 class="text-dark font-weight-bold">Kontakt</h1>
-                </div>
-                <div class="col-md-4 order-1 order-md-2 align-self-center">
-                    <ul class="breadcrumb d-block text-md-end font-weight-medium">
-                        <li><a href="{{ route('web')}}">Domov</a></li>
-                        <li class="active">Kontakt</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('web.components.breadcrumb', ['pages' => $breadcrumb])
 
     <section class="section my-0 py-5 border-0 bg-color-tertiary text-color-dark p-relative overflow-hidden">
 
@@ -72,16 +61,16 @@
                     </div>
 
                     <div class="d-block pb-4">
-                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Send us an email</p>
+                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Pošlite nám email</p>
                         <p class="p-relative bottom-4 text-color-dark">
                             <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email')}}">{{config('app.company_email')}}</a> / <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email_secondary')}}">{{config('app.company_email_secondary')}}</a>
                         </p>
                     </div>
 
                     <div class="d-block pb-4">
-                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Corporate HQ</p>
+                        <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Adresa</p>
                         <p class="p-relative bottom-4 text-color-dark">
-                            12345 Porto Blvd.<br>Suite 1500<br>Los Angeles, California 90000
+                            {{config('app.company_name')}}<br>{{config('app.company_street')}}<br>{{config('app.company_zip').' '.config('app.company_city')}}
                         </p>
                     </div>
 
@@ -147,13 +136,13 @@
 
                                 <div class="row">
                                     <div class="col py-3">
-                                        <p class="mb-0 opacity-7 text-2">* Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.</p>
+                                        <p class="mb-0 opacity-7 text-2">Vyplnte všetky polia</p>
                                     </div>
                                 </div>
 
                                 <div class="row pt-2">
                                     <div class="form-group col">
-                                        <input type="submit" value="Submit Form" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
+                                        <input type="submit" value="Odoslať " class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
                                     </div>
                                 </div>
                             </form>

@@ -82,17 +82,18 @@ p {
 		font-style: normal;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1300px) {
 		.custom-text-1 {
-				font-size: 180px;
+				font-size: 160px !important;
 		}
 }
 
-@media (min-width: 1400px) {
+@media (max-width: 700px) {
 		.custom-text-1 {
-				font-size: 300px;
+				font-size: 140px !important;
 		}
 }
+
 
 .custom-svg-position-1 {
 		position: absolute;

@@ -56,8 +56,13 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="demo-renewable-energy-services.html">
+                                                <a class="nav-link" href="{{route('services')}}">
                                                     Služby
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="nav-link" href="{{route('certificates')}}">
+                                                    Certifikáty
                                                 </a>
                                             </li>
                                             <li>

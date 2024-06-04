@@ -41,5 +41,16 @@ return [
                 'url' => 'https://www.velux.sk/',
                 'logo' => ['name' => 'velux.JPG', 'alt' => 'Logo Velux']
             ],
-        ],
+    ],'certificates' => [
+            ['name' => '1.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '2.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '3.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '4.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '5.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '6.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '7.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '8.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '9.jpeg', 'alt' => 'Certifikát ...'],
+            ['name' => '10.jpeg', 'alt' => 'Certifikát ...'],
+    ]
 ];    

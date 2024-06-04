@@ -34,6 +34,7 @@
                     <li><a href="{{route('web')}}" class="text-color-grey text-color-hover-primary">Domov</a></li>
                     <li><a href="{{route('gallery')}}" class="text-color-grey text-color-hover-primary">Realizácie</a></li>
                     <li><a href="{{route('services')}}" class="text-color-grey text-color-hover-primary">Služby</a></li>
+                    <li><a href="{{route('certificates')}}" class="text-color-grey text-color-hover-primary">Certifikáty</a></li>
                     <li><a href="{{route('contact')}}" class="text-color-grey text-color-hover-primary">Kontakt</a></li>
                 </ul>
             </div>

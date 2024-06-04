@@ -90,17 +90,16 @@
 
 	<section class="section my-0 py-5 border-0 bg-color-grey">
 		<div class="container container-xl-custom pt-4 pb-5">
-			<div class="row w-75 mx-auto justify-center py-5">
+			<div class="row w-75 mx-auto justify-center py-5 g-5">
 				<div class="col-lg-7">
-					<h6 class="font-weight-bold mb-2">KVALITA V KAŽDOM DETAILE</h4>
-					<h4 class="mb-3">PREČO SI VYBRAŤ PRÁVE NÁS?</h3>
-					<p class="mb-4 pb-2">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse hendrerit vehicula leo, vel efficitur fel.</p>
+					<h6 class="font-weight-bold mb-2 title-size">KVALITA V KAŽDOM DETAILE</h6>
+					<h3 class="mb-3 font-weight-bold">Prečo si vybrať práve nás ?</h3>
+					<p class="mb-4 pb-2 custom-text-size">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse hendrerit vehicula leo, vel efficitur fel.</p>
 
 					<div class="hstack gap-4">
 						<div>
 							<a href="{{route('services')}}" class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">NAŠE SLUŽBY <i class="fas fa-arrow-right ms-2"></i></a>
 						</div>
-						<div class="vr"></div>
 						<div>
 							<img src="" class="img-fluid me-3">
 							<img src="" class="img-fluid">
@@ -112,7 +111,7 @@
 						<h5 class="text-4-5 font-weight-bold">REALIZÁCIE</h5>
 					</div>
 					<div class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400" data-plugin-options="{'minWindowWidth': 0}">
-					<span class="bg-no-repeat bg-clip-text font-weight-bold custom-text-1" style="background-image: url('img/gallery/937c33fe-48da-464c-a3cb-e528c6f14990.JPG');">100<em>+</em></span>
+					<span class="bg-no-repeat bg-clip-text font-weight-bold custom-text-1" style="background-image: url('img/gallery/937c33fe-48da-464c-a3cb-e528c6f14990.JPG');">100+</span>
 					</div>
 				</div>
 			</div>
