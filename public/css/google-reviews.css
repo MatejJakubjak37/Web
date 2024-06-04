@@ -1,0 +1,56 @@
+.review {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0;
+    box-shadow: none;
+    cursor: default;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.review .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review .stars {
+    font-size: 20px;
+    color: #e6e6e6;
+}
+
+.review .stars .active {
+    color: #f9bc15;
+}
+
+.review .time {
+    font-size: 14px;
+    text-align: left;
+    color: #b5b5b5;
+}
+
+.review p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+}
+
+.review .author {
+    font-size: 18px;
+    text-align: left;
+}
+
+.review .author a {
+    color: #0a0c0d;
+}
+
+.review .author a:hover {
+    text-decoration: none;
+}
+
+.review img {
+    width: 50px;
+    height: auto;
+}
