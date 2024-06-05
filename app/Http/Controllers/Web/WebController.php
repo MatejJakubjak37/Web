@@ -9,6 +9,7 @@ class WebController extends Controller
     public function default()
     {
         return $this->makeView('web.pages.default', [
+            'images' => array_slice(config('data.gallery.images'), 0,5),
             'cooperation_companies' => config('data.cooperation_companies'),
         ]);
     }

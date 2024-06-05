@@ -131,6 +131,7 @@
                                         <input type="submit" value="Odoslať " class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
                                     </div>
                                 </div>
+                                <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
                             </form>
                         </div>
                     </div>

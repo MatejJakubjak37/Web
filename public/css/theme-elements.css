@@ -1015,11 +1015,11 @@ Theme Version:	9.9.3
 /* Ken Burns To Left */
 @keyframes kenBurnsToLeft {
 	from {
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	to {
-		transform: scale(1);
+		transform: scale(1.1);
 	}
 }
 
@@ -3879,7 +3879,6 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 
 .owl-carousel.nav-arrows-thin .owl-nav .owl-prev:before, .owl-carousel.nav-arrows-thin .owl-nav .owl-next:before {
 	font-family: simple-line-icons;
-	speak: none;
 	font-style: normal;
 	font-weight: 700;
 	font-variant: normal;
@@ -7153,6 +7152,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 textarea {
+	appearance: none;
 	-webkit-appearance: none;
 }
 
@@ -12383,6 +12383,7 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 	-webkit-mask-image: url(../img/particle-dot.svg);
 	mask-image: url(../img/particle-dot.svg);
 	z-index: 0;
+	mask-size:18px;
 	-webkit-mask-size: 18px;
 }
 
@@ -16587,7 +16588,6 @@ html.gecko .sort-destination.sort-destination-margin > [class*="col-"] {
 	background-color: #CCC;
 	border-radius: 2px;
 	display: inline-block;
-	float: left;
 	font-size: 0.6em;
 	font-weight: 600;
 	letter-spacing: 0;
@@ -17816,6 +17816,7 @@ p.drop-caps.drop-caps-style-2:first-letter {
 /* Gradient Text */
 .gradient-text-color {
 	-webkit-background-clip: text !important;
+	background-clip: text;
 	-webkit-text-fill-color: transparent !important;
 }
 

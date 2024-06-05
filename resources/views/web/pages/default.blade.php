@@ -5,7 +5,7 @@
 	<section class="section section-with-shape-divider border-0 py-0 my-0 bg-transparent">
 
 		<div class="hero position-relative overflow-hidden">
-			<div class="background-image-wrapper position-absolute overlay overlay-show overlay-primary overlay-op-8 top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" style="background-image: url(img/gallery/937c33fe-48da-464c-a3cb-e528c6f14990.JPG); background-size: cover; background-position: left top;"></div>
+			<div class="background-image-wrapper position-absolute overlay overlay-show overlay-primary overlay-op-8 top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" style="background-image: url({{config('app.path_img').'/gallery/close-up.jpg'}}); background-size: cover; background-position: left center;"></div>
 
 			<div class="hero-el-1 z-index-2"></div>
 			<div class="hero-el-2 z-index-1"></div>
@@ -17,7 +17,7 @@
 					c3.54,14.35,10.42,41.25,29.79,70.47c6.64,10.01,30.84,44.6,76.77,69.11c42.9,22.9,81.52,24.6,110.47,25.87
 					c45.57,2.01,79.98-6.18,113.02-14.3c30.83-7.58,58.4-18.38,113.53-40c59.55-23.35,66.43-28.58,110.47-43.91
 					c35.63-12.41,57.67-19.98,89.36-25.7c25.68-4.64,55.3-9.77,94.3-6.3c12.43,1.11,53.97,5.59,102.13,27.74
-					c32.05,14.74,53.03,30.87,57.53,34.38c24.26,18.91,41.05,38.65,51.91,53.45"/>
+					c32.05,14.74,53.03,30.87,57.53,34.38c24.26,18.91,41.05,38.65,51.91,53.45"/>	
 				<path class="appear-animation" data-plugin-options="{'accY': -500, 'forceAnimation': true}" data-appear-animation="customLines1anim" data-appear-animation-delay="100" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M119.44,34.42c8.99,12.85,20.33,30.49,31.66,52.43c26.28,50.9,36.35,93.84,39.15,106.55
 					c3.12,14.2,10.77,52.5,9.53,102.81c-0.28,11.19-2.03,65.48-23.83,133.79c-9.82,30.78-21.07,54.56-43.57,102.13
 					c-26.78,56.6-29.14,53.79-45.62,90.21c-19.84,43.85-42.56,94.07-48.68,161.02c-2.86,31.34-5.69,66.08,7.49,108.6
@@ -52,11 +52,11 @@
 						<h1 class="text-light font-weight-bold text-14 negative-ls-05 line-height-1 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100" data-plugin-options="{'minWindowWidth': 0}">Profesionálne klampiarske služby</h1>
 						<a href="{{route('contact')}}" class="btn btn-arrow-effect-1 ws-nowrap text-light text-4 bg-transparent border-0 px-0 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}">Chcem cenovú ponuku<i class="fas fa-arrow-right ms-2 p-relative top-2"></i></a>
 					</div>
-					<div class="col-xl-3 text-xl-end d-none d-xl-block">
-						<div class="row align-items-center">
-							
-						</div>
-					</div>
+					<div class="col-xl-6 text-xl-end d-none d-xl-block">
+                        <div class="appear-animation d-flex justify-content-center" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" data-plugin-options="{'minWindowWidth': 0}">
+                            <img src="{{config('app.path_img').'/gallery/vsimjak_Generate_roof_in_construciton.png'}}" data-src="{{config('app.path_img').'/gallery/vsimjak_Generate_roof_in_construciton.png'}}" class="img-fluid border-radius lazyload w-50">
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -123,50 +123,30 @@
 			<div class="row justify-content-between align-items-center py-5">
 				<div class="col-lg-3">
 					<h4 class="text-color-grey text-3 font-weight-bold mb-2">PROFESIONÁLNA REALIZÁCIA</h4>
-					<h3 class="mb-3">Naše posledné realizácie</h3></h3>
+					<h3 class="mb-3">Naše posledné realizácie</h3>
 					<p class="mb-5 mb-lg-0">Preskúmajte naše najnovšie projekty a presvedčte sa s kvalitou našich prác.</p>
 					<div>
                         <a href="{{route('gallery')}}" class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5 mt-3 btn-arrow-effect-1 ws-nowrap">FOTODOKUMENTÁCIA REALIZÁCIÍ <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
 				</div>
 				<div class="col-lg-8">
-					<div class="carousel-half-full-width-wrapper carousel-half-full-width-right">
-						<div class="owl-carousel owl-theme carousel-half-full-width-right nav-style-1 nav-dark nav-font-size-lg mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 3}}, 'loop': true, 'nav': true, 'dots': false, 'margin': 20}">
-							<div class="p-relative">
-								<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper rounded">
-									<span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-										<img src=" {{ asset('img/gallery/0cc8655d-0394-4bae-a339-de617929f540.JPG') }}" class="img-fluid" alt="">
-									</span>
-								</span>
-							</div>
-							<div class="p-relative">
-								<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper rounded">
-									<span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-										<img src=" {{ asset('img/gallery/9d04791a-225a-4e03-a1e7-cc18ff9880fe.JPG') }}" class="img-fluid" alt="">
-									</span>
-								</span>
-							</div>
-							<div class="p-relative">
-								<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper rounded">
-									<span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-										<img src=" {{ asset('img/gallery/74457d7f-e8e9-4f8c-bf14-42f85a2fbf97.JPG') }}" class="img-fluid" alt="">
-									</span>
-								</span>
-							</div>
-							<div class="p-relative">
-								<span class="thumb-info thumb-info-swap-content anim-hover-inner-wrapper rounded">
-									<span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-										<img src=" {{ asset('img/gallery/b4b94ced-d2a1-41fd-aafc-50d19d9f3bec.JPG') }}" class="img-fluid" alt="">
-									</span>
-								</span>
-							</div>
-							</div>
-						</div>
+					<div class="carousel-half-full-width-wrapper carousel-half-full-width-right mt-4">
+                        <div class="owl-carousel owl-theme carousel-half-full-width-right nav-style-1 nav-dark nav-font-size-lg mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 3}}, 'loop': true, 'nav': true, 'dots': false, 'margin': 20, 'autoplay': true, 'autoplayHoverPause': true}">
+                            @foreach($images as $image)
+                                <div class="p-relative">
+                                    <span>
+                                        <span>
+                                            <img src="{{config('app.path_img').'/gallery/'.$image['name']}}" class="img-fluid" style="height: 300px; object-fit: cover;" alt="{{$image['alt']}}">
+                                        </span>
+                                    </span>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+
 
 	<div class="row">
 		<div class="col py-4">
@@ -194,15 +174,10 @@
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
 
-	<!-- Demo -->
-	<script src="js/demos/demo-renewable-energy.js"></script>
-
 	<!-- Theme Custom -->
 	<script src="js/custom.js"></script>
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
 
-	</body>
-</html>
 @endsection

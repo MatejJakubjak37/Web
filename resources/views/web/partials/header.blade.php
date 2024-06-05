@@ -7,7 +7,7 @@
                         <div class="header-row">
                             <div class="header-logo m-0">
                                 <a href="{{route('web')}}">
-                                    <img alt="Porto" width="111" height="41" src="">
+                                    <img alt="{{config('company_name')}}" height="46" src="{{ config('app.path_img').'/kmetik_logo.svg'}}">
                                 </a>
                             </div>
                         </div>
