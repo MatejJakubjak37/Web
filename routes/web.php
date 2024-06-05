@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\WebController;
+use App\Http\Controllers\MailController;
+use App\Mail\TestMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,11 @@ Route::get('/galeria', [WebController::class, 'gallery'])->name('gallery');
 Route::get('/sluzby', [WebController::class, 'services'])->name('services');
 
 Route::get('/certifikaty', [WebController::class, 'certificates'])->name('certificates');
+
+//Route::get('/send-mail', [MailController::class, 'index']);
+
+Route::get('/send-mail', function() {
+
+    // The email sending is done using the to method on the Mail facade
+    Mail::to('jakubjakm37@gmail.com')->send(new TestMail());
+});

@@ -6,7 +6,7 @@
 
     <title>@hasSection('title')@yield('title') | {{config('app.name')}} @else{{config('app.name')}} | Klempiarské práce Kmetik @endif</title>
 
-    <link rel="shortcut icon" type="image/svg" href="{{ asset(config('app.path_img').'/favicon.svg') }}"/>
+    <link rel="shortcut icon" type="image/svg" href="{{ config('app.path_img').'/favicon.svg'}}"/>
 
     <meta name="keywords" content="WebSite Template" />
     <meta name="description" content="Porto - Multipurpose Website Template">
