@@ -84,7 +84,8 @@
                     <div class="card border-0 bg-color-light text-color-tertiary">
                         <div class="card-body m-4">
                             <h3 class="mb-3 text-5">Požiadajte o personalizovanú cenovú ponuku ešte dnes!</h3>
-                              <form class="contact-form" action="php/contact-form.php" method="POST">
+                              <form class="contact-form" action="{{ route('send_mail') }}" method="POST">
+                                @csrf 
                                 <div class="contact-form-success alert alert-success d-none mt-4">
                                     <strong>Success!</strong> Your message has been sent to us.
                                 </div>
@@ -96,47 +97,32 @@
 
                                 <div class="row">
                                     <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Celé Meno</label>
-                                        <input type="text" value="" data-msg-required="Please enter your name." class="form-control text-3 h-auto py-2" name="name" required>
+                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Meno a Priezvisko</label>
+                                        <input type="text" value="" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="name" required>
                                     </div>
                                     <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Email</label>
-                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control text-3 h-auto py-2" name="email" required>
+                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Emailová Adresa</label>
+                                        <input type="email" value="" data-msg-required="Prosím vyplňte toto pole." data-msg-email="Neplatná emailová adresa" class="form-control text-3 h-auto py-2" name="email" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="form-group col">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Celá Adresa</label>
-                                        <input type="text" value="" data-msg-required="Please enter your address." class="form-control text-3 h-auto py-2" name="address" required>
+                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Tel. Číslo</label>
+                                        <input type="text" value="" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="phone" required>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Monthly Usage in KWh</label>
-                                        <input type="text" value="" data-msg-required="Please enter Monthly Usage in KWh." class="form-control text-3 h-auto py-2" name="usage" required>
-                                    </div>
-                                    <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Typ Strechy</label>
-                                        <input type="text" value="" data-msg-required="Please enter Service Type." class="form-control text-3 h-auto py-2" name="service" required>
+                                    <div class="form-group">
+                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Predmet správy</label>
+                                        <input type="text" value="" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="subject" required>
                                     </div>
                                 </div>
-
                                 <div class="row">
-                                    <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Economy Goals</label>
-                                        <input type="text" value="" data-msg-required="Please enter Economy Goals." class="form-control text-3 h-auto py-2" name="goals" required>
-                                    </div>
-                                    <div class="form-group col-lg-6">
-                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Budget</label>
-                                        <input type="text" value="" data-msg-required="Please enter Budget."class="form-control text-3 h-auto py-2" name="budget" required>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col py-3">
-                                        <p class="mb-0 opacity-7 text-2">Vyplnte všetky polia</p>
+                                    <div class="form-group">
+                                        <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Obsah správyy</label>
+                                        <textarea value="" rows="5" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="mess" required></textarea>
                                     </div>
                                 </div>
 

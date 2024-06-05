@@ -28,8 +28,4 @@ Route::get('/certifikaty', [WebController::class, 'certificates'])->name('certif
 
 //Route::get('/send-mail', [MailController::class, 'index']);
 
-Route::get('/send-mail', function() {
-
-    // The email sending is done using the to method on the Mail facade
-    Mail::to('jakubjakm37@gmail.com')->send(new TestMail());
-});
+Route::post ('/send-mail',[MailController::class,'maildata'])->name('send_mail');

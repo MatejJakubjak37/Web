@@ -29,7 +29,6 @@ return [
 
     'facebook_url' => env('FACEBOOK_URL', 'https://www.facebook.com/'),
     'instagram_url' => env('INSTAGRAM_URL', 'https://www.instagram.com/'),
-
     /*
     |--------------------------------------------------------------------------
     | Application Environment
