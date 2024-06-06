@@ -1,5 +1,11 @@
 @extends('web.web')
 
+@section('header')
+    <meta property="og:title"              content="{{config('app.name')}} | Naše certifikáty" />
+    <meta property="og:description"        content="Pozrite si naše certifikáty a osvedčenia, ktoré potvrdzujú našu odbornosť a kvalitu našich klampiarskych služieb." />
+    <meta name="description"               content="Pozrite si naše certifikáty a osvedčenia, ktoré potvrdzujú našu odbornosť a kvalitu našich klampiarskych služieb.">
+@endsection
+
 @section('title')
     {{end($breadcrumb)['title']}}
 @endsection

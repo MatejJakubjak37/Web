@@ -1,5 +1,11 @@
 @extends('web.web')
 
+@section('header')
+    <meta property="og:title"              content="{{end($breadcrumb)['title'].' | '.config('app.name')}}" />
+    <meta property="og:description"        content="Pre viac informácií nám napíšte alebo zavolajte." />
+    <meta name="description"               content="Pre viac informácií nám napíšte alebo zavolajte.">
+@endsection
+
 @section('title')
     {{end($breadcrumb)['title']}}
 @endsection

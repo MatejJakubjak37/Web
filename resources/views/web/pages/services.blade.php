@@ -1,5 +1,11 @@
 @extends('web.web')
 
+@section('header')
+    <meta property="og:title"              content="{{config('app.name')}} | Naše klampiarske služby" />
+    <meta property="og:description"        content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály." />
+    <meta name="description"               content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály.">
+@endsection
+
 @section('title')
     {{end($breadcrumb)['title']}}
 @endsection

@@ -1,6 +1,11 @@
 @extends('web.web')
 
-			
+@section('header')
+    <meta property="og:title"              content="{{config('app.name')}} | Profesionálne klampiarske služby pre váš dom" />
+    <meta property="og:description"        content="Kvalitné klampiarske služby. Poskytujeme strechy a klampiarske výrobky na mieru. Spoľahlivosť, kvalita a profesionálny prístup." />
+    <meta name="description"               content="Kvalitné klampiarske služby. Poskytujeme strechy a klampiarske výrobky na mieru. Spoľahlivosť, kvalita a profesionálny prístup.">
+@endsection
+
 @section('content')
 	<section class="section section-with-shape-divider border-0 py-0 my-0 bg-transparent">
 
@@ -94,7 +99,7 @@
 				<div class="col-lg-7">
 					<h6 class="font-weight-bold mb-2 title-size">KVALITA V KAŽDOM DETAILE</h6>
 					<h3 class="mb-3 font-weight-bold">Prečo si vybrať práve nás ?</h3>
-					<p class="mb-4 pb-2 custom-text-size">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse hendrerit vehicula leo, vel efficitur fel.</p>
+					<p class="mb-4 pb-2 custom-text-size">Naša firma zamestnáva skúsených klampiarov, používame len tie najkvalitnejšie materiály a ku každému projektu pristupujeme individuálne. Dodržiavame termíny, máme dlhoročné skúsenosti a na všetky naše práce poskytujeme záruku.</p>
 
 					<div class="hstack gap-4">
 						<div>
