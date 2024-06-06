@@ -29,6 +29,11 @@ return [
 
     'facebook_url' => env('FACEBOOK_URL', 'https://www.facebook.com/'),
     'instagram_url' => env('INSTAGRAM_URL', 'https://www.instagram.com/'),
+
+    'google_place_id' => env('GOOGLE_PLACE_ID'),
+    'google_api_key' => env('GOOGLE_API_KEY'),
+    'google_reviews_url' => env('GOOGLE_REVIEWS_URL'),
+    'google_add_review_url' => env('GOOGLE_ADD_REVIEW_URL'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

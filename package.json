@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36"
+    "@fancyapps/ui": "^5.0.36",
+    "jquery": "^3.7.1"
   }
 }

@@ -38,6 +38,7 @@
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href=" {{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{asset(config('app.path_web_asset').'/css/google-reviews.css?v=').config('app.version')}}">
 
     <!-- Head Libs -->
     <script src=" {{ asset('js/modernizr.min.js') }}"></script>

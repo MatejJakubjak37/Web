@@ -172,8 +172,11 @@
 	@endforeach
 	</div>
 
-	
-
+	<section class="section my-0 py-5 border-0 bg-color-grey">
+        <div class="container container-xl-custom">
+            {!! $reviews !!}
+        </div>
+    </section>
 	
 
 	<!-- Theme Base, Components and Settings -->

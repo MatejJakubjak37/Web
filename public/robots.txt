@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /node_modules/
+Disallow: /storage/
+
