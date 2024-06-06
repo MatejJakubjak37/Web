@@ -83,6 +83,11 @@
 
                     <div class="card border-0 bg-color-light text-color-tertiary">
                         <div class="card-body m-4">
+                            @error('g-recaptcha-response')
+                                <div class="alert alert-warning mt-2" style="border: 1px solid #000; background-color: #fff; color: #000; padding: 10px; border-radius: 5px;">
+                                    Nepodarilo sa overiť, že ste človek. Prosím, vyplňte CAPTCHA a skúste to znova.
+                                </div>
+                            @enderror
                             <h3 class="mb-3 text-5">Požiadajte o personalizovanú cenovú ponuku ešte dnes!</h3>
                               <form class="contact-form" action="{{ route('send_mail') }}" method="POST">
                                 @csrf 
@@ -105,14 +110,14 @@
                                         <input type="email" value="" data-msg-required="Prosím vyplňte toto pole." data-msg-email="Neplatná emailová adresa" class="form-control text-3 h-auto py-2" name="email" required>
                                     </div>
                                 </div>
-
+                                
                                 <div class="row">
                                     <div class="form-group col">
                                         <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Tel. Číslo</label>
                                         <input type="text" value="" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="phone" required>
                                     </div>
                                 </div>
-
+                                
                                 <div class="row">
                                     <div class="form-group">
                                         <label class="form-label mb-1 text-2 text-color-dark font-weight-semibold">Predmet správy</label>
@@ -125,13 +130,20 @@
                                         <textarea value="" rows="5" data-msg-required="Prosím vyplňte toto pole." class="form-control text-3 h-auto py-2" name="mess" required></textarea>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="captcha">
+                                            <span>{!! app('captcha')->display($attributes = [], $options = ['lang'=> 'sk']) !!}</span>
+                                            <!-- <button type="button" class="btn btn-success refresh-cpatcha"><i class="fa fa-refresh"></i></button> -->
+                                            </div>
+                                    </div>
+                                </div>   
 
-                                <div class="row pt-2">
+                                <div class="row">
                                     <div class="form-group col">
                                         <input type="submit" value="Odoslať " class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
                                     </div>
                                 </div>
-                                <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
                             </form>
                         </div>
                     </div>

@@ -26,6 +26,4 @@ Route::get('/sluzby', [WebController::class, 'services'])->name('services');
 
 Route::get('/certifikaty', [WebController::class, 'certificates'])->name('certificates');
 
-//Route::get('/send-mail', [MailController::class, 'index']);
-
 Route::post ('/send-mail',[MailController::class,'maildata'])->name('send_mail');

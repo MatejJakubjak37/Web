@@ -42,8 +42,6 @@
     <!-- Head Libs -->
     <script src=" {{ asset('js/modernizr.min.js') }}"></script>
 
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
-
 
 
     <meta property="og:type"               content="website" />
