@@ -1,3 +1,4 @@
+@include('web.components.cookies')
 <header id="header" class="" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 91, 'stickySetTop': '-91px', 'stickyChangeLogo': true}">
     <div class="header-body border-0 box-shadow-none">
         <div class="border-bottom-light w-75 m-auto">

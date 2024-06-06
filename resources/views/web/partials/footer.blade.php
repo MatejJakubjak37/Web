@@ -59,10 +59,18 @@
         <div class="container container-xl-custom">
             <hr class="bg-color-light opacity-1">
             <div class="row">
-                <div class="col mt-4 mb-4 pb-5">
+                <div class="col pb-5 d-flex justify-content-center">
+                    <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+                    <a href="#" id="open_preferences_center">Update cookies preferences</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-4 pb-5">
                     <p class="text-center text-color-grey text-3 mb-0">© Copyright 2024. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </div>
+
 </footer>
