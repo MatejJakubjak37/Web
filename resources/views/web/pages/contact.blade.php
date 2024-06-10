@@ -71,20 +71,26 @@
                         <p class="p-relative bottom-4 text-color-dark">
                             <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email')}}">{{config('app.company_email')}}</a> / <a class="text-2 font-weight-bold mb-0 text-color-dark" href="mailto:{{config('app.company_email_secondary')}}">{{config('app.company_email_secondary')}}</a>
                         </p>
-                    </div>
-
+                    </div>     
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h2 class="text-color-dark font-weight-bold text-10 negative-ls-05 line-height-1 mb-5">Kde nás <span class="font-weight-extra-bold custom-highlight-1 ws-nowrap p-1 custom-highlight-anim custom-highlight-anim-delay">nájdete</span></h2>
                     <div class="d-block pb-4">
                         <p class="text-uppercase text-2 font-weight-bold mb-0 text-color-dark opacity-7">Adresa</p>
                         <p class="p-relative bottom-4 text-color-dark">
                             {{config('app.company_name')}}<br>{{config('app.company_street')}}<br>{{config('app.company_zip').' '.config('app.company_city')}}
                         </p>
                     </div>
-
                     <div class="d-block pb-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18593.276715203887!2d18.667161764192496!3d49.166767590307735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145f6bd709b8c7%3A0x285a3af828e7e524!2s013%2018%20Lietava!5e0!3m2!1ssk!2ssk!4v1717422489898!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <div class="col-lg-6 mt-5 mt-lg-0">
                     <h2 class="text-color-dark font-weight-bold text-10 negative-ls-05 line-height-1 mb-5">Chcem cenovú ponuku</span></h2>
 
                     <div class="card border-0 bg-color-light text-color-tertiary">
@@ -140,7 +146,6 @@
                                     <div class="form-group">
                                         <div class="captcha">
                                             <span>{!! app('captcha')->display($attributes = [], $options = ['lang'=> 'sk']) !!}</span>
-                                            <!-- <button type="button" class="btn btn-success refresh-cpatcha"><i class="fa fa-refresh"></i></button> -->
                                             </div>
                                     </div>
                                 </div>   
@@ -154,9 +159,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            -->
+
+    @include('web.components.get-a-quote-section')
 
 </div>
 @endsection

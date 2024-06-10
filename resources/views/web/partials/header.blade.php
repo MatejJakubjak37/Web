@@ -67,6 +67,11 @@
                                                 </a>
                                             </li>
                                             <li>
+                                                <a class="nav-link" href=" {{route('about')}}">
+                                                    O nás
+                                                </a>
+                                            </li>
+                                            <li>
                                                 <a class="nav-link" href=" {{route('contact')}}">
                                                     Kontakt
                                                 </a>
@@ -90,7 +95,7 @@
                                     </nav>
                                 </div>
                             </div>
-                            <a href="{{ route('contact')}}" class="btn btn-modern btn-dark font-weight-bold border-0 btn-arrow-effect-1">CHCEM CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="{{route('web')}}/#get-a-quote" class="btn btn-modern btn-primary font-weight-bold border-0 btn-arrow-effect-1">CHCEM CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
                             <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
                                 <i class="fas fa-bars"></i>
                             </button>

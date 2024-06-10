@@ -23,7 +23,7 @@
         @endif
         <div class="col-12 mt-3">
             <div class="d-flex flex-column flex-md-row justify-content-between">
-                <a href="{{config('app.google_reviews_url')}}" target="_blank" class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap mb-3 mb-md-0">ZOBRAZIŤ VŠETKY <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="{{config('app.google_reviews_url')}}" target="_blank" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap mb-3 mb-md-0">ZOBRAZIŤ VŠETKY <i class="fas fa-arrow-right ms-2"></i></a>
                 <a href="{{config('app.google_add_review_url')}}" target="_blank" class="btn btn-modern btn-tertiary font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">PRIDAŤ RECENZIU <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>

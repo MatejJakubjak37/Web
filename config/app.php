@@ -45,6 +45,7 @@ return [
     |
     */
 
+    'name' => env('APP_NAME', 'Example'),
     'env' => env('APP_ENV', 'production'),
 
     /*

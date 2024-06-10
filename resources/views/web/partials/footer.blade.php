@@ -36,6 +36,7 @@
                     <li><a href="{{route('services')}}" class="text-color-grey text-color-hover-primary">Služby</a></li>
                     <li><a href="{{route('certificates')}}" class="text-color-grey text-color-hover-primary">Certifikáty</a></li>
                     <li><a href="{{route('contact')}}" class="text-color-grey text-color-hover-primary">Kontakt</a></li>
+                    <li><a href="{{route('about')}}" class="text-color-grey text-color-hover-primary">O nás</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-2 mt-4 mt-lg-0">

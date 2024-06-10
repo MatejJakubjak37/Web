@@ -25,6 +25,7 @@
 <div class="container container-xl-custom p-relative z-index-1 custom-el-pos-2 pb-5">
     @include('web.components.fancybox-certificates', ['images' => $images])
 </div>
+@include('web.components.get-a-quote-section')
 @endsection
 
 @section('style')

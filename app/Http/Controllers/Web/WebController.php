@@ -62,6 +62,14 @@ class WebController extends Controller
         ]);
     }
 
+    public function about() {
+        return $this->makeView('web.pages.about', [
+            'breadcrumb' => [
+                ['title' => 'O nás']
+            ]
+        ]);
+    }
+
     private function renderReviews($reviews)
     {
         return view('web.components.reviews.list', ['list' => $reviews])->render();

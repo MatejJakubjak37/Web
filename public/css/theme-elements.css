@@ -2136,13 +2136,13 @@ html body.body .btn:active {
 
 /* Colors */
 .btn-primary {
-	background-color: #CCC;
+	background-color: #0d6efd;
 	border-color: #CCC #CCC #b3b2b2;
-	color: #FFF;
+	color: #FFF;	
 }
 
 .btn-primary:hover, .btn-primary.hover {
-	background-color: #dfdfdf;
+	background-color: #0d6efd;
 	border-color: #e6e5e5 #e6e5e5 #CCC;
 	color: #FFF;
 }
@@ -13647,10 +13647,14 @@ html.lightbox-opened .scroll-to-top {
 
 /* Section Featured */
 section.section {
-	background: #f7f7f7;
+	background: #fff;
 	border-top: 5px solid #f1f1f1;
 	margin: 30px 0;
 	padding: 50px 0;
+}
+
+section.sive {
+	background: #56606a !important;
 }
 
 section.section > .container {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@hasSection('title')@yield('title') | {{config('app.name')}} @else{{config('app.name')}} | Klempiarské práce Kmetik @endif</title>
+    <title>@hasSection('title')@yield('title') | Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @else{{config('app.name')}} | Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @endif</title>
 
     <link rel="shortcut icon" type="image/svg" href="{{ config('app.path_img').'/kmetik_logo_white.svg'}}"/>
 
