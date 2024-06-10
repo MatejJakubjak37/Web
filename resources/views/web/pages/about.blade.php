@@ -2,8 +2,8 @@
 
 @section('header')
     <meta property="og:title"              content="{{config('app.name')}} | Naše klampiarske služby" />
-    <meta property="og:description"        content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály." />
-    <meta name="description"               content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály.">
+    <meta property="og:description"        content="Naša firma sa zameriava na výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Našim klientom ponúkame komplexné služby vrátane ohýbania materiálu, predaja materiálu a falcovania." />
+    <meta name="description"               content="Naša firma sa zameriava na výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Našim klientom ponúkame komplexné služby vrátane ohýbania materiálu, predaja materiálu a falcovania.">
 @endsection
 
 @section('title')

@@ -2,8 +2,8 @@
 
 @section('header')
     <meta property="og:title"              content="{{config('app.name')}} | Profesionálne klampiarske služby pre váš dom" />
-    <meta property="og:description"        content="Kvalitné klampiarske služby. Poskytujeme strechy a klampiarske výrobky na mieru. Spoľahlivosť, kvalita a profesionálny prístup." />
-    <meta name="description"               content="Kvalitné klampiarske služby. Poskytujeme strechy a klampiarske výrobky na mieru. Spoľahlivosť, kvalita a profesionálny prístup.">
+    <meta property="og:description"        content="Odborníci na klampiarske, pokrývačské a izolatérske práce s viac ako 23-ročnými skúsenosťami. Zaručujeme kvalitné opravy a rekonštrukcie striech s 10-ročnou zárukou." />
+    <meta name="description"               content="Odborníci na klampiarske, pokrývačské a izolatérske práce s viac ako 23-ročnými skúsenosťami. Zaručujeme kvalitné opravy a rekonštrukcie striech s 10-ročnou zárukou.">
 @endsection
 
 @section('content')
