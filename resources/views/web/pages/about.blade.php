@@ -1,7 +1,7 @@
 @extends('web.web')
 
 @section('header')
-    <meta property="og:title"              content="{{config('app.name')}} | Naše klampiarske služby" />
+    <meta property="og:title"              content="{{config('app.name')}} : O nás" />
     <meta property="og:description"        content="Naša firma sa zameriava na výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Našim klientom ponúkame komplexné služby vrátane ohýbania materiálu, predaja materiálu a falcovania." />
     <meta name="description"               content="Naša firma sa zameriava na výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Našim klientom ponúkame komplexné služby vrátane ohýbania materiálu, predaja materiálu a falcovania.">
 @endsection
@@ -24,10 +24,10 @@
             <p class="mb-4 pb-2 font-weight-regular">Naše práce sú zaručené 10-ročnou zárukou, čo svedčí o našej dôvere v kvalitu a trvanlivosť našich riešení.</p>
 
             <div>
-                <a href="{{route('services')}}" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">NAŠE SLUŽBY <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="{{route('services')}}" class="btn btn-modern btn-antracit font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">NAŠE SLUŽBY <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-5">
             <div class="cascading-images-wrapper">
                 <div class="cascading-images position-relative">
                     <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}">

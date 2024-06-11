@@ -1200,7 +1200,7 @@ pre {
 }
 
 #header .header-btn-collapse-nav {
-	background: #CCC;
+	background: #363636;
 	color: #FFF;
 	display: none;
 	float: right;
@@ -3643,13 +3643,13 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav-main nav > ul > li > a.active {
-		color: #FFF !important;
-		background: #CCC;
+		color: #fff !important;
+		background: #32353a;
 	}
 
 	#header .header-nav-main nav > ul > li > a.active:focus, #header .header-nav-main nav > ul > li > a.active:hover {
 		color: #FFF;
-		background: #CCC;
+		background: #32353a;
 	}
 
 	#header .header-nav-main nav .not-included {
@@ -7767,7 +7767,7 @@ html.dark .text-muted {
 
 /* Colors */
 .text-dark {
-	color: #212529 !important;
+	color: #363636 !important;
 }
 
 .inner-text-dark * {

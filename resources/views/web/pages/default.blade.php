@@ -1,7 +1,7 @@
 @extends('web.web')
 
 @section('header')
-    <meta property="og:title"              content="{{config('app.name')}} | Profesionálne klampiarske služby pre váš dom" />
+    <meta property="og:title"              content="{{config('app.name')}} : Profesionálne klampiarske služby pre váš dom" />
     <meta property="og:description"        content="Odborníci na klampiarske, pokrývačské a izolatérske práce s viac ako 23-ročnými skúsenosťami. Zaručujeme kvalitné opravy a rekonštrukcie striech s 10-ročnou zárukou." />
     <meta name="description"               content="Odborníci na klampiarske, pokrývačské a izolatérske práce s viac ako 23-ročnými skúsenosťami. Zaručujeme kvalitné opravy a rekonštrukcie striech s 10-ročnou zárukou.">
 @endsection
@@ -93,17 +93,17 @@
 		</div>
 	</section>
 
-	<section class="section my-0 py-5 border-0 bg-color-grey">
-		<div class="container container-xl-custom pt-4 pb-5">
-			<div class="row w-75 mx-auto justify-center py-5 g-5">
-				<div class="col-lg-7">
-					<h6 class="font-weight-bold mb-2 title-size">KVALITA V KAŽDOM DETAILE</h6>
-					<h3 class="mb-3 font-weight-bold">Prečo si vybrať práve nás ?</h3>
-					<p class="mb-4 pb-2 custom-text-size">Sme profesionáli v oblasti klampiarskych, pokrývačských a izolatérskych prác, s viac ako 23-ročnou praxou. Naša špecializácia zahŕňa výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Ponúkame aj doplnkové služby ako ohýbanie materiálu, predaj materiálu a falcovanie. Na všetky naše práce poskytujeme 10-ročnú záruku. Spoľahnite sa na naše odborné služby a dlhoročné skúsenosti.</p>
+	<section class="section my-0 border-0 bg-color-grey">
+		<div class="container container-xl-custom ">
+			<div class="row w-75 mx-auto justify-center align-items-start py-3">
+				<div class="col-lg-6 mb-5">
+					<h6 class="font-weight-bold mb-2 title-size text-dark">KVALITA V KAŽDOM DETAILE</h6>
+					<h3 class="mb-3 font-weight-bold text-dark">Prečo si vybrať práve nás ?</h3>
+					<p class="mb-4 pb-2 custom-text-size text-dark">Sme profesionáli v oblasti klampiarskych, pokrývačských a izolatérskych prác, s viac ako 23-ročnou praxou. Naša špecializácia zahŕňa výškové práce, opravy a rekonštrukcie striech, montáž klampiarskych prvkov a odkvapových systémov. Ponúkame aj doplnkové služby ako ohýbanie materiálu, predaj materiálu a falcovanie. Na všetky naše práce poskytujeme 10-ročnú záruku. Spoľahnite sa na naše odborné služby a dlhoročné skúsenosti.</p>
 
 					<div class="hstack gap-4">
 						<div>
-							<a href="{{route('services')}}" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">NAŠE SLUŽBY <i class="fas fa-arrow-right ms-2"></i></a>
+							<a href="{{route('services')}}" class="btn btn-modern btn-antracit font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">NAŠE SLUŽBY <i class="fas fa-arrow-right ms-2"></i></a>
 						</div>
 						<div>
 							<img src="" class="img-fluid me-3">
@@ -111,12 +111,13 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-lg-1"></div>
 				<div class="col-lg-5 mt-5 mt-lg-0 mb-5 mb-lg-0">
 					<div class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" data-plugin-options="{'minWindowWidth': 0}">
 						<h5 class="text-4-5 font-weight-bold">REALIZÁCIE</h5>
 					</div>
 					<div class="appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400" data-plugin-options="{'minWindowWidth': 0}">
-					<span class="bg-no-repeat bg-clip-text font-weight-bold custom-text-1" style="background-image: url('img/gallery/937c33fe-48da-464c-a3cb-e528c6f14990.JPG');">100+</span>
+						<span class="bg-no-repeat bg-clip-text font-weight-bold custom-text-1" style="background-image: url({{config('app.path_img').'/gallery/close-up-copu.jpg'}});">100+</span>
 					</div>
 				</div>
 			</div>
@@ -131,7 +132,7 @@
 					<h3 class="mb-3">Naše posledné realizácie</h3>
 					<p class="mb-5 mb-lg-0">Preskúmajte naše najnovšie projekty a presvedčte sa s kvalitou našich prác.</p>
 					<div>
-                        <a href="{{route('gallery')}}" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5 mt-3 btn-arrow-effect-1 ws-nowrap">FOTODOKUMENTÁCIA REALIZÁCIÍ <i class="fas fa-arrow-right ms-2"></i></a>
+                        <a href="{{route('gallery')}}" class="btn btn-modern btn-antracit font-weight-bold border-0 py-3 px-5 mt-3 btn-arrow-effect-1 ws-nowrap">REALIZÁCIE <i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
 				</div>
 				<div class="col-lg-8">
@@ -141,8 +142,10 @@
                                 <div class="p-relative">
                                     <span>
                                         <span>
+											<a href="{{route('gallery')}}">
                                             <img src="{{config('app.path_img').'/gallery/'.$image['name']}}" class="img-fluid" style="height: 300px; object-fit: cover;" alt="{{$image['alt']}}">
-                                        </span>
+											</a>	
+										</span>
                                     </span>
                                 </div>
                             @endforeach
@@ -217,7 +220,7 @@
 			</div>
 			<div class="row mt-5 pt-3 justify-content-between align-items-center">
 				<div class="col-lg-5 text-color-light">
-					<h4 class="text-primary text-3 font-weight-bold mb-2">AKO ZAČAŤ</h4>
+					<h4 class="text-light text-3 font-weight-bold mb-2">AKO ZAČAŤ</h4>
 					<h3 class="mb-3 text-color-light">Požiadajte o personalizovanú cenovú ponuku ešte dnes!</h3>
 					<p class="mb-4 pb-2 text-color-light opacity-7">Ozvite sa nám! Veľmi radi Vám odpovieme na všetky otázky. Nechajte si vypracovať individuálnu kalkuláciu na rekuperáciu do Vášho domu. Zabezpečujeme montáž a servis po celom Slovensku.</p>
 					<div class="row align-items-center mb-4">
@@ -233,7 +236,7 @@
 					</div>
 					<div class="hstack gap-4">
 						<div>
-							<a href="{{route('services')}}" class="btn btn-modern btn-primary font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">VIAC O NAŠÍCH SLUŽBÁCH<i class="fas fa-arrow-right ms-2"></i></a>
+							<a href="{{route('services')}}" class="btn btn-modern btn-antracit font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">VIAC O NAŠÍCH SLUŽBÁCH<i class="fas fa-arrow-right ms-2"></i></a>
 						</div>
 					</div>
 				</div>

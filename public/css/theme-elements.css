@@ -2426,6 +2426,18 @@ html body.body .btn:active {
 	color: #FFF;
 }
 
+.btn-antracit {
+	background-color: #32353a;
+	border-color: #32353a #32353a #0a0c0d;
+	color: #FFF;
+}
+
+.btn-antracit:hover, .btn-antracit.hover {
+	background-color: #32353a;
+	border-color: #32353a #32353a #0a0c0d;
+	color: #FFF;
+}
+
 .btn-dark:hover, .btn-dark.hover {
 	background-color: #32383e;
 	border-color: #383f45 #383f45 #212529;

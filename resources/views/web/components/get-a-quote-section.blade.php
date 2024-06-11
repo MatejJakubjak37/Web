@@ -44,7 +44,7 @@
                 <p class="mb-0 text-color-dark ps-lg-5">Odborníci na klampiarske, pokrývačské a izolatérske práce s viac ako 23-ročnými skúsenosťami. Zaručujeme kvalitné opravy a rekonštrukcie striech s 10-ročnou zárukou.</p>
             </div>
             <div class="col-lg-3 mt-3 mt-lg-0 text-lg-end">
-                <a href="{{route('web')}}/#get-a-quote" class="btn btn-modern btn-primary text-color-light font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">POŽIADAŤ O CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="{{route('web')}}/#get-a-quote" class="btn btn-modern btn-antracit text-color-light font-weight-bold border-0 py-3 px-5 btn-arrow-effect-1 ws-nowrap">POŽIADAŤ O CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </div>

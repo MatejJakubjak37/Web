@@ -1,7 +1,7 @@
-@include('web.components.cookies')
+
 <header id="header" class="" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 91, 'stickySetTop': '-91px', 'stickyChangeLogo': true}">
     <div class="header-body border-0 box-shadow-none">
-        <div class="border-bottom-light w-75 m-auto">
+        <div class="border-bottom-light w-100 w-lg-75pct mx-auto">
             <div class="header-container container container-xl-custom">
                 <div class="header-row py-4">
                     <div class="header-column">
@@ -37,42 +37,42 @@
                 </div>
             </div>	
         </div>				
-        <div class="header-nav-bar z-index-0 w-75 m-auto">
+        <div class="header-nav-bar z-index-0 w-100 w-lg-75pct mx-auto">
             <div class="container container-xl-custom">
                 <div class="header-row py-2">
                     <div class="header-column">
                         <div class="header-row align-items-center justify-content-end">
-                            <div class="header-nav header-nav-links justify-content-start pb-1">
+                            <div class="header-nav header-nav-links justify-content-start xl-pb-1">
                                 <div class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li>
-                                                <a class="nav-link active" href="{{route('web')}}">
+                                                <a class="nav-link @if(request()->routeIs('web'))active @endif text-dark" href="{{route('web')}}">
                                                     Domov
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="{{route('gallery')}}">
+                                                <a class="nav-link @if(request()->routeIs('gallery'))active @endif text-dark" href="{{route('gallery')}}">
                                                     Realizácie
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="{{route('services')}}">
+                                                <a class="nav-link @if(request()->routeIs('services'))active @endif text-dark" href="{{route('services')}}">
                                                     Služby
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href="{{route('certificates')}}">
+                                                <a class="nav-link @if(request()->routeIs('certificates'))active @endif text-dark" href="{{route('certificates')}}">
                                                     Certifikáty
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href=" {{route('about')}}">
+                                                <a class="nav-link @if(request()->routeIs('about'))active @endif text-dark" href=" {{route('about')}}">
                                                     O nás
                                                 </a>
                                             </li>
                                             <li>
-                                                <a class="nav-link" href=" {{route('contact')}}">
+                                                <a class="nav-link @if(request()->routeIs('contact'))active @endif text-dark" href=" {{route('contact')}}">
                                                     Kontakt
                                                 </a>
                                             </li>
@@ -95,7 +95,7 @@
                                     </nav>
                                 </div>
                             </div>
-                            <a href="{{route('web')}}/#get-a-quote" class="btn btn-modern btn-primary font-weight-bold border-0 btn-arrow-effect-1">CHCEM CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="{{route('web')}}/#get-a-quote" class="btn btn-modern btn-antracit font-weight-bold border-0 btn-arrow-effect-1">CHCEM CENOVÚ PONUKU <i class="fas fa-arrow-right ms-2"></i></a>
                             <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
                                 <i class="fas fa-bars"></i>
                             </button>

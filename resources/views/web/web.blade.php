@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type"               content="website" />
+    <meta property="og:url"                content="{{url()->current()}}" />
+    <meta property="og:image"              content="{{asset(config('app.path_img').'/background-social.png')}}" />
+    @yield('header')
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
-    <title>@hasSection('title')@yield('title') | Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @else{{config('app.name')}} | Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @endif</title>
+    <title>@hasSection('title')@yield('title') : Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @else{{config('app.name')}} : Profesionálne Klampiarske a Pokrývačské práce | Kvalitné Strešné Riešenia @endif</title>
 
-    <link rel="shortcut icon" type="image/svg" href="{{ config('app.path_img').'/kmetik_logo_white.svg'}}"/>
-
-    <meta name="keywords" content="WebSite Template" />
-    <meta name="description" content="Porto - Multipurpose Website Template">
-    <meta name="author" content="okler.net">
+    <link rel="shortcut icon" type="image/svg" href="{{ config('app.path_img').'/kmetik_logo.svg'}}"/>
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
     <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
@@ -45,14 +45,10 @@
 
 
 
-    <meta property="og:type"               content="website" />
-    <meta property="og:url"                content="{{url()->current()}}" />
-    <meta property="og:image"              content="{{asset(config('app.path_img').'/background-social.webp')}}" />
-    @yield('header')
-
     @yield('style')
 </head>
 <body class="alternative-font-7">
+    <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/f12da5daa7e1eff64bac8479e35183b9.js"></script>
 
     <div class="body">
         @include('web.partials.header')

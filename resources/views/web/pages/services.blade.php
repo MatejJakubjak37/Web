@@ -1,7 +1,7 @@
 @extends('web.web')
 
 @section('header')
-    <meta property="og:title"              content="{{config('app.name')}} | Naše klampiarske služby" />
+    <meta property="og:title"              content="{{config('app.name')}} : Naše klampiarske služby" />
     <meta property="og:description"        content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály." />
     <meta name="description"               content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály.">
 @endsection
@@ -15,7 +15,7 @@
 @include('web.components.breadcrumb', ['pages' => $breadcrumb]) 
 
 
-<section class="section my-0 py-5 border-0 bg-color-light">
+<section class="section my-0 py-3 border-0 bg-color-light">
     <div class="container container-xl-custom pt-4 pb-5">
         <h3 class="mb-1">Klampiarske a pokrývačské práce</h3>
     </div>

@@ -31,12 +31,12 @@
             <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
                 <h3 class="mb-3 text-4-5 text-color-light">Navigácia</h3>
                 <ul class="list list-unstyled columns-lg-2 font-weight-medium">
-                    <li><a href="{{route('web')}}" class="text-color-grey text-color-hover-primary">Domov</a></li>
-                    <li><a href="{{route('gallery')}}" class="text-color-grey text-color-hover-primary">Realizácie</a></li>
-                    <li><a href="{{route('services')}}" class="text-color-grey text-color-hover-primary">Služby</a></li>
-                    <li><a href="{{route('certificates')}}" class="text-color-grey text-color-hover-primary">Certifikáty</a></li>
-                    <li><a href="{{route('contact')}}" class="text-color-grey text-color-hover-primary">Kontakt</a></li>
-                    <li><a href="{{route('about')}}" class="text-color-grey text-color-hover-primary">O nás</a></li>
+                    <li><a href="{{route('web')}}" class="text-color-primary text-color-hover-light">Domov</a></li>
+                    <li><a href="{{route('gallery')}}" class="text-color-primary text-color-hover-light">Realizácie</a></li>
+                    <li><a href="{{route('services')}}" class="text-color-primary text-color-hover-light">Služby</a></li>
+                    <li><a href="{{route('certificates')}}" class="text-color-primary text-color-hover-light">Certifikáty</a></li>
+                    <li><a href="{{route('contact')}}" class="text-color-primary text-color-hover-light">Kontakt</a></li>
+                    <li><a href="{{route('about')}}" class="text-color-primary text-color-hover-light">O nás</a></li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-2 mt-4 mt-lg-0">
@@ -60,11 +60,7 @@
         <div class="container container-xl-custom">
             <hr class="bg-color-light opacity-1">
             <div class="row">
-                <div class="col pb-5 d-flex justify-content-center">
-                    <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
-
-                    <a href="#" id="open_preferences_center">Update cookies preferences</a>
-                </div>
+               
             </div>
             <div class="row">
                 <div class="col mb-4 pb-5">

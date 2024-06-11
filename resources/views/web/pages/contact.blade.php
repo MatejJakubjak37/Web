@@ -1,7 +1,7 @@
 @extends('web.web')
 
 @section('header')
-    <meta property="og:title"              content="{{end($breadcrumb)['title'].' | '.config('app.name')}}" />
+    <meta property="og:title"              content="{{end($breadcrumb)['title'].' : '.config('app.name')}}" />
     <meta property="og:description"        content="Pre viac informácií nám napíšte alebo zavolajte." />
     <meta name="description"               content="Pre viac informácií nám napíšte alebo zavolajte.">
 @endsection
@@ -14,7 +14,7 @@
 <div role="main" class="main">
     @include('web.components.breadcrumb', ['pages' => $breadcrumb])
 
-    <section class="section my-0 py-5 border-0 bg-color-tertiary text-color-dark p-relative overflow-hidden">
+    <section class="section my-0 py-0 border-0 bg-color-tertiary text-color-dark p-relative overflow-hidden">
 
         <svg class="d-none d-lg-block custom-svg-position-3 rotate-r-90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1686.88 1095.86" data-appear-animation-svg="true">
             <path class="appear-animation" data-plugin-options="{'accY': -500, 'forceAnimation': true}" data-appear-animation="customLines1anim" data-appear-animation-delay="100" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M87.95,1.4c6.82,9.14,15.53,21.59,24.68,36.94c6.82,11.45,27.18,46.82,42.55,96.51
@@ -54,7 +54,7 @@
         <div class="container container-xl-custom">
             <div class="row mt-5 pt-3 justify-content-between">
                 <div class="col-lg-5 text-color-dark">
-                    <h4 class="text-primary text-3 font-weight-bold mb-2">OZVITE SA NÁM</h4>
+                    <h4 class="text-dark text-3 font-weight-bold mb-2">OZVITE SA NÁM</h4>
                     <h3 class="mb-3 text-color-dark">Neváhajte nás kontaktovať.<br> Radi Vám pomôžeme a zodpovedáme Vaše otázky.</h3>
                     <p class="mb-4 pb-2 text-color-dark opacity-7">Neváhajte sa na nás kedykoľvek obrátiť. Vaše otázky a dotazy sú pre nás dôležité a veľmi radi Vám pomôžeme. Neváhajte nás kontaktovať, sme tu, aby sme Vám pomohli!</p>
 
@@ -82,7 +82,7 @@
                         </p>
                     </div>
                     <div class="d-block pb-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18593.276715203887!2d18.667161764192496!3d49.166767590307735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145f6bd709b8c7%3A0x285a3af828e7e524!2s013%2018%20Lietava!5e0!3m2!1ssk!2ssk!4v1717422489898!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18593.276715203887!2d18.667161764192496!3d49.166767590307735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145f6bd709b8c7%3A0x285a3af828e7e524!2s013%2018%20Lietava!5e0!3m2!1ssk!2ssk!4v1717422489898!5m2!1ssk!2ssk" height="260" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@
 
                                 <div class="row">
                                     <div class="form-group col">
-                                        <input type="submit" value="Odoslať " class="btn btn-modern btn-dark font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
+                                        <input type="submit" value="Odoslať " class="btn btn-modern btn-antracit font-weight-bold border-0 py-3 px-5" data-loading-text="Loading...">
                                     </div>
                                 </div>
                             </form>

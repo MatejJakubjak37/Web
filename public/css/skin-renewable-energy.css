@@ -808,7 +808,11 @@ html .nav-color-light:not(.header-nav-main-dropdown-arrow) nav > ul > li ul {
 
 .nav-pills > li.active > a,
 .nav-pills .nav-link.active {
-	background-color: #00a335;
+	background-color: #00a335 !important;
+}
+
+.current-page.active {
+	background-color: #000000 !;
 }
 
 .nav-pills > li.active > a:hover,
@@ -1576,6 +1580,16 @@ html .btn-dark {
 	border-color: #3e3e3e #3e3e3e #252525;
 	color: #FFF;
 	--color: #3e3e3e;
+	--hover: #515151;
+	--disabled: #3e3e3e;
+	--active: #2b2b2b;
+}
+
+html .btn-antracit {
+	background-color: #32353a;
+	border-color: #32353a #32353a #252525;
+	color: #FFF;
+	--color: ##32353a;
 	--hover: #515151;
 	--disabled: #3e3e3e;
 	--active: #2b2b2b;

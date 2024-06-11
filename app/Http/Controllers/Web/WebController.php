@@ -40,7 +40,7 @@ class WebController extends Controller
         return $this->makeView('web.pages.gallery', [
             'images' => config('data.gallery.images'),
             'breadcrumb' => [
-                ['title' => 'Galéria']
+                ['title' => 'Realizácie']
             ]
         ]);
     }

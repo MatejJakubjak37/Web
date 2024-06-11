@@ -1,6 +1,6 @@
 <div class="row g-2 justify-content-center fancybox-gallery">
     @foreach($images as $image)
-        <div class="col-4 col-xl-3">
+        <div class="col-xl-3 col-md-4 col-6">
             <a
                 data-fancybox="gallery"
                 href="{{config('app.path_img').'/gallery/'.$image['name']}}"

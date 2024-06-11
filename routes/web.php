@@ -19,7 +19,7 @@ use App\Mail\TestMail;
 
 Route::get('/', [WebController::class, 'default'])->name('web');
 Route::get('/kontakt', [WebController::class, 'contact'])->name('contact');
-Route::get('/galeria', [WebController::class, 'gallery'])->name('gallery');
+Route::get('/realizacie', [WebController::class, 'gallery'])->name('gallery');
 Route::get('/sluzby', [WebController::class, 'services'])->name('services');
 Route::get('/certifikaty', [WebController::class, 'certificates'])->name('certificates');
 Route::get('/onas', [WebController::class, 'about'])->name('about');

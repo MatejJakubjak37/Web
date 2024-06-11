@@ -94,6 +94,13 @@ p {
 		}
 }
 
+@media (max-width: 500px) {
+	.custom-text-1 {
+			font-size: 120px !important;
+			top: 50px;
+	}
+}
+
 
 .custom-svg-position-1 {
 		position: absolute;
