@@ -67,6 +67,11 @@
                                                 </a>
                                             </li>
                                             <li>
+                                                <a class="nav-link @if(request()->routeIs('blog'))active @endif text-dark" href="{{route('blog')}}">
+                                                    Blog
+                                                </a>
+                                            </li>
+                                            <li>
                                                 <a class="nav-link @if(request()->routeIs('about'))active @endif text-dark" href=" {{route('about')}}">
                                                     O nás
                                                 </a>

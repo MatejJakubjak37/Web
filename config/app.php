@@ -74,6 +74,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
     'path_img' => env('PATH_IMG', '/img'),
+    'blog_path_img' => env('BLOG_PATH_IMG', '/img/blog/'),
     'path_plugins' => env('PATH_PLUGINS', '/node_modules'),
 
     'asset_url' => env('ASSET_URL'),

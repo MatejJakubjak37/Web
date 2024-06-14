@@ -128,7 +128,7 @@
 		<div class="container container-xl-custom">
 			<div class="row justify-content-between align-items-center py-5">
 				<div class="col-lg-3">
-					<h4 class="text-color-grey text-3 font-weight-bold mb-2">PROFESIONÁLNA REALIZÁCIA</h4>
+					<h4 class="text-color-dark text-3 font-weight-bold mb-2">PROFESIONÁLNA REALIZÁCIA</h4>
 					<h3 class="mb-3">Naše posledné realizácie</h3>
 					<p class="mb-5 mb-lg-0">Preskúmajte naše najnovšie projekty a presvedčte sa s kvalitou našich prác.</p>
 					<div>
@@ -174,6 +174,40 @@
 		</div>
 	@endforeach
 	</div>
+
+	<div class="row">
+		<div class="col py-4">
+			<hr>
+		</div>
+	</div>
+
+	<section class="section my-0 py-5 border-0 bg-transparent">
+		<div class="container container-xl-custom py-5">
+			<div class="row">
+				<div class="col">
+					<h3 class="mb-3">Z nášho blogu</h3>
+				</div>
+			</div>
+			<div class="row pt-2">
+				@foreach($blog_posts as $post)
+						<div class="col-lg-4 mb-4">
+							<div class="row align-items-center p-relative">
+								<div class="col-lg-6">
+									<img src="{{ config('app.blog_path_img') . $post->image_src }}" class="img-fluid rounded" alt="{{ $post->title }}" />
+								</div>
+								<div class="col-lg-6 mt-4 mt-lg-0">
+									<span class="d-block text-color-grey font-weight-semibold positive-ls-2 text-1 text-uppercase">{{ $post->created_at->format('d M Y') }}</span>
+									<h4 class="font-weight-bold text-5 text-color-hover-primary mb-2">{{ $post->title }}</h4>
+									<p class="text-3 mb-2">{{ \Illuminate\Support\Str::limit($post->short_description, 25, $end='...') }}</p>
+									<a href="{{ url('blog', $post->slug) }}" class="btn btn-arrow-effect-1 ws-nowrap text-dark text-2 bg-transparent border-0 px-0 text-uppercase stretched-link">Čítaj viac <i class="fas fa-arrow-right ms-2"></i></a>
+								</div>
+							</div>
+						</div>
+				@endforeach
+			</div>
+		</div>
+	</section>
+	
 
 	<section id="get-a-quote" class="section sive my-0 py-5 border-0 bg-color-dark text-color-light p-relative overflow-hidden">
 

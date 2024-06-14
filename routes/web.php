@@ -22,6 +22,8 @@ Route::get('/kontakt', [WebController::class, 'contact'])->name('contact');
 Route::get('/realizacie', [WebController::class, 'gallery'])->name('gallery');
 Route::get('/sluzby', [WebController::class, 'services'])->name('services');
 Route::get('/certifikaty', [WebController::class, 'certificates'])->name('certificates');
+Route::get('/blog', [WebController::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}', [WebController::class, 'showBlog'])->name('blog.show');
 Route::get('/onas', [WebController::class, 'about'])->name('about');
 Route::post ('/send-mail',[MailController::class,'maildata'])->name('send_mail');
 

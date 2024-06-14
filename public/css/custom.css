@@ -17,3 +17,13 @@
 .custom-text-size {
     font-size: 14px;
 }
+
+.blog-img {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+	.blog-img {
+        width: 100%;
+    }
+}

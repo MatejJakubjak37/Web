@@ -35,6 +35,7 @@
                     <li><a href="{{route('gallery')}}" class="text-color-primary text-color-hover-light">Realizácie</a></li>
                     <li><a href="{{route('services')}}" class="text-color-primary text-color-hover-light">Služby</a></li>
                     <li><a href="{{route('certificates')}}" class="text-color-primary text-color-hover-light">Certifikáty</a></li>
+                    <li><a href="{{route('blog')}}" class="text-color-primary text-color-hover-light">Blog</a></li>
                     <li><a href="{{route('contact')}}" class="text-color-primary text-color-hover-light">Kontakt</a></li>
                     <li><a href="{{route('about')}}" class="text-color-primary text-color-hover-light">O nás</a></li>
                 </ul>
