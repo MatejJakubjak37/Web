@@ -74,7 +74,7 @@ class WebController extends Controller
     }
 
     public function blog() {
-        $blog_posts = BlogPosts::all();
+        $blog_posts = BlogPosts::orderBy('created_at', 'desc')->get();
         return $this->makeView('web.pages.blog', [
             'breadcrumb' => [
                 ['title' => 'Blog']
