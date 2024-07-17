@@ -2,8 +2,8 @@
 
 @section('header')
     <meta property="og:title"              content="{{config('app.name')}} : Naše certifikáty" />
-    <meta property="og:description"        content="Pozrite si naše certifikáty a osvedčenia, ktoré potvrdzujú našu odbornosť a kvalitu našich klampiarskych služieb." />
-    <meta name="description"               content="Pozrite si naše certifikáty a osvedčenia, ktoré potvrdzujú našu odbornosť a kvalitu našich klampiarskych služieb.">
+    <meta property="og:description"        content="Počas nášho pôsobenia sme si získali mnoho spokojných zákazníkov a tak isto ocenení a certifikátov, ktoré potvrdzujú našu solventnosť, dôveryhodnosť a spoľahlivosť." />
+    <meta name="description"               content="Počas nášho pôsobenia sme si získali mnoho spokojných zákazníkov a tak isto ocenení a certifikátov, ktoré potvrdzujú našu solventnosť, dôveryhodnosť a spoľahlivosť.">
 @endsection
 
 @section('title')

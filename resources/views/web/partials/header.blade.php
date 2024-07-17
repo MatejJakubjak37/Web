@@ -35,8 +35,8 @@
                         </div>
                     </div>
                 </div>
-            </div>	
-        </div>				
+            </div>
+        </div>
         <div class="header-nav-bar z-index-0 w-100 w-lg-75pct mx-auto">
             <div class="container container-xl-custom">
                 <div class="header-row py-2">
@@ -46,11 +46,11 @@
                                 <div class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
-                                            <li>
+                                            <!--<li>
                                                 <a class="nav-link @if(request()->routeIs('web'))active @endif text-dark" href="{{route('web')}}">
                                                     Domov
                                                 </a>
-                                            </li>
+                                            </li>-->
                                             <li>
                                                 <a class="nav-link @if(request()->routeIs('gallery'))active @endif text-dark" href="{{route('gallery')}}">
                                                     Realizácie
@@ -66,11 +66,11 @@
                                                     Certifikáty
                                                 </a>
                                             </li>
-                                            <li>
+                                            <!--<li>
                                                 <a class="nav-link @if(request()->routeIs('blog'))active @endif text-dark" href="{{route('blog')}}">
                                                     Blog
                                                 </a>
-                                            </li>
+                                            </li>-->
                                             <li>
                                                 <a class="nav-link @if(request()->routeIs('about'))active @endif text-dark" href=" {{route('about')}}">
                                                     O nás

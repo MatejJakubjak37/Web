@@ -22,7 +22,7 @@
 					c3.54,14.35,10.42,41.25,29.79,70.47c6.64,10.01,30.84,44.6,76.77,69.11c42.9,22.9,81.52,24.6,110.47,25.87
 					c45.57,2.01,79.98-6.18,113.02-14.3c30.83-7.58,58.4-18.38,113.53-40c59.55-23.35,66.43-28.58,110.47-43.91
 					c35.63-12.41,57.67-19.98,89.36-25.7c25.68-4.64,55.3-9.77,94.3-6.3c12.43,1.11,53.97,5.59,102.13,27.74
-					c32.05,14.74,53.03,30.87,57.53,34.38c24.26,18.91,41.05,38.65,51.91,53.45"/>	
+					c32.05,14.74,53.03,30.87,57.53,34.38c24.26,18.91,41.05,38.65,51.91,53.45"/>
 				<path class="appear-animation" data-plugin-options="{'accY': -500, 'forceAnimation': true}" data-appear-animation="customLines1anim" data-appear-animation-delay="100" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M119.44,34.42c8.99,12.85,20.33,30.49,31.66,52.43c26.28,50.9,36.35,93.84,39.15,106.55
 					c3.12,14.2,10.77,52.5,9.53,102.81c-0.28,11.19-2.03,65.48-23.83,133.79c-9.82,30.78-21.07,54.56-43.57,102.13
 					c-26.78,56.6-29.14,53.79-45.62,90.21c-19.84,43.85-42.56,94.07-48.68,161.02c-2.86,31.34-5.69,66.08,7.49,108.6
@@ -57,11 +57,11 @@
 						<h1 class="text-light font-weight-bold text-14 negative-ls-05 line-height-1 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100" data-plugin-options="{'minWindowWidth': 0}">Profesionálne klampiarske služby</h1>
 						<a href="{{route('web')}}/#get-a-quote" class="btn btn-arrow-effect-1 ws-nowrap text-light text-4 bg-transparent border-0 px-0 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}">Chcem cenovú ponuku<i class="fas fa-arrow-right ms-2 p-relative top-2"></i></a>
 					</div>
-					<div class="col-xl-6 text-xl-end d-none d-xl-block">
+					<!--<div class="col-xl-6 text-xl-end d-none d-xl-block">
                         <div class="appear-animation d-flex justify-content-center" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="100" data-plugin-options="{'minWindowWidth': 0}">
                             <img src="{{config('app.path_img').'/gallery/vsimjak_Generate_roof_in_construciton.png'}}" data-src="{{config('app.path_img').'/gallery/vsimjak_Generate_roof_in_construciton.png'}}" class="img-fluid border-radius lazyload w-50">
                         </div>
-                    </div>
+                    </div>-->
 				</div>
 			</div>
 		</div>
@@ -144,7 +144,7 @@
                                         <span>
 											<a href="{{route('gallery')}}">
                                             <img src="{{config('app.path_img').'/gallery/'.$image['name']}}" class="img-fluid" style="height: 300px; object-fit: cover;" alt="{{$image['alt']}}">
-											</a>	
+											</a>
 										</span>
                                     </span>
                                 </div>
@@ -181,7 +181,7 @@
 		</div>
 	</div>
 
-	<section class="section my-0 py-5 border-0 bg-transparent">
+	<!-- <section class="section my-0 py-5 border-0 bg-transparent">
 		<div class="container container-xl-custom py-5">
 			<div class="row">
 				<div class="col">
@@ -207,7 +207,8 @@
 			</div>
 		</div>
 	</section>
-	
+	-->
+
 
 	<section id="get-a-quote" class="section sive my-0 py-5 border-0 bg-color-dark text-color-light p-relative overflow-hidden">
 
@@ -304,12 +305,14 @@
 		</div>
 	</section>
 
+        @if($reviews_size != 0)
 	<section class="section my-0 py-5 border-0 bg-color-grey">
         <div class="container container-xl-custom">
             {!! $reviews !!}
         </div>
     </section>
-	
+        @endif
+
 
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>

@@ -19,6 +19,7 @@ class WebController extends Controller
     public function default()
     {
         $reviews = $this->review_service->get(['per_page' => 3]);
+        $reviews_size = sizeof($reviews);
         $blog_posts = BlogPosts::orderBy('created_at', 'desc')->take(3)->get();
 
         return $this->makeView('web.pages.default', [
@@ -26,6 +27,7 @@ class WebController extends Controller
             'cooperation_companies' => config('data.cooperation_companies'),
             'reviews' => $this->renderReviews($reviews),
             'blog_posts' => $blog_posts,
+            'reviews_size' => $reviews_size
         ]);
     }
 

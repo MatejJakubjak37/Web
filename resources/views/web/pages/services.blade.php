@@ -2,8 +2,8 @@
 
 @section('header')
     <meta property="og:title"              content="{{config('app.name')}} : Naše klampiarske služby" />
-    <meta property="og:description"        content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály." />
-    <meta name="description"               content="Ponúkame širokú škálu klampiarskych služieb vrátane montáže striech, opráv a údržby klampiarskych výrobkov. Profesionálny prístup a kvalitné materiály.">
+    <meta property="og:description"        content="Naša firma ponúka kompletné služby v oblasti konštrukcie striech. Pre komplexnú obnovu strešných systémov ponúkame služby rekonštrukcie striech. Kvalitná montáž klampiarskych prvkov je kľúčová pre ochranu vašej strechy pred poveternostnými vplyvmi." />
+    <meta name="description"               content="Naša firma ponúka kompletné služby v oblasti konštrukcie striech. Pre komplexnú obnovu strešných systémov ponúkame služby rekonštrukcie striech. Kvalitná montáž klampiarskych prvkov je kľúčová pre ochranu vašej strechy pred poveternostnými vplyvmi.">
 @endsection
 
 @section('title')
@@ -12,7 +12,7 @@
 
 @section('content')
 
-@include('web.components.breadcrumb', ['pages' => $breadcrumb]) 
+@include('web.components.breadcrumb', ['pages' => $breadcrumb])
 
 
 <section class="section my-0 py-3 border-0 bg-color-light">
@@ -73,11 +73,11 @@
     <div class="row">
         <div class="col-lg-6 mb-5">
             <h4 class="font-weight-bold mt-4">Ohýbanie materiálu</h4>
-            <h6>Naša firma ponúka presné ohýbanie rôznych druhov materiálov podľa vašich špecifikácií. Využívame moderné stroje a technológie, ktoré zaručujú vysokú presnosť a kvalitu výsledného produktu.</h6>   
+            <h6>Naša firma ponúka presné ohýbanie rôznych druhov materiálov podľa vašich špecifikácií. Využívame moderné stroje a technológie, ktoré zaručujú vysokú presnosť a kvalitu výsledného produktu.</h6>
         </div>
         <div class="col-lg-6 mb-5">
             <h4 class="font-weight-bold mt-4">Falcovanie</h4>
-            <h6>Poskytujeme odborné falcovanie materiálov, ktoré zvyšuje pevnosť a trvanlivosť vašich strešných systémov. Naši odborníci zabezpečia precízne spracovanie každého materiálu podľa vašich potrieb.</h6>   
+            <h6>Poskytujeme odborné falcovanie materiálov, ktoré zvyšuje pevnosť a trvanlivosť vašich strešných systémov. Naši odborníci zabezpečia precízne spracovanie každého materiálu podľa vašich potrieb.</h6>
         </div>
         <div class="col-lg-6 mb-5">
             <h4 class="font-weight-bold mt-4">Profilovanie Krytiny</h4>

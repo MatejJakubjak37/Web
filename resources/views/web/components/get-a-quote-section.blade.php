@@ -1,4 +1,4 @@
-<section class="section my-0 py-5 border-0 bg-color-primary text-color-light p-relative overflow-hidden">
+<section class="section my-0 py-5 border-0 bg-color-grey text-color-light p-relative overflow-hidden">
 
     <svg class="d-none d-lg-block custom-svg-position-2 rotate-r-90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1686.88 1095.86" data-appear-animation-svg="true">
         <path class="appear-animation" data-plugin-options="{'accY': -500, 'forceAnimation': true}" data-appear-animation="customLines1anim" data-appear-animation-delay="100" data-appear-animation-duration="7s" fill="none" stroke="#d8d8d8" stroke-width="2px" stroke-miterlimit="10" d="M87.95,1.4c6.82,9.14,15.53,21.59,24.68,36.94c6.82,11.45,27.18,46.82,42.55,96.51

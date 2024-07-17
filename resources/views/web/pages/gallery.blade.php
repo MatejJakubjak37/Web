@@ -2,15 +2,15 @@
 
 @section('header')
     <meta property="og:title"              content="{{config('app.name')}} : Naše realizácie" />
-    <meta property="og:description"        content="Prezrite si naše úspešné realizácie klampiarskych prác. Kvalitné strechy a klampiarske výrobky pre rôzne typy budov." />
-    <meta name="description"               content="Prezrite si naše úspešné realizácie klampiarskych prác. Kvalitné strechy a klampiarske výrobky pre rôzne typy budov.">
+    <meta property="og:description"        content="Pozrite si naše referencie a presvedčte sa o kvalite našich prác. Realizovali sme množstvo projektov, od malých opráv po rozsiahle rekonštrukcie striech. Naše práce sú dôkazom našej profesionality a zodpovedného prístupu ku každému projektu." />
+    <meta name="description"               content="Pozrite si naše referencie a presvedčte sa o kvalite našich prác. Realizovali sme množstvo projektov, od malých opráv po rozsiahle rekonštrukcie striech. Naše práce sú dôkazom našej profesionality a zodpovedného prístupu ku každému projektu.">
 @endsection
 
 @section('title')
     {{end($breadcrumb)['title']}}
 @endsection
 
-			
+
 @section('content')
 
 @include('web.components.breadcrumb', ['pages' => $breadcrumb])
